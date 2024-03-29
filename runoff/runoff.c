@@ -8,7 +8,7 @@
 // preferences[i][j] is jth preference for voter i
 int preferences[MAX_VOTERS][MAX_CANDIDATES];
 
-// Candidates have name, vote count, eliminated status
+// Candidates have name, vote count and eliminated status
 typedef struct
 {
     string name;
@@ -98,7 +98,7 @@ int main(int argc, string argv[])
         int min = find_min();
         bool tie = is_tie(min);
 
-        // If tie, everyone wins
+        // If it's a tie, everyone wins
         if (tie)
         {
             for (int i = 0; i < candidate_count; i++)
