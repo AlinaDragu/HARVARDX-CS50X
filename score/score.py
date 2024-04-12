@@ -1,8 +1,8 @@
-from cs50 import get_int # type: ignore
+
 scores = []
 for i in range(3):
-    score = get_int("Score: ")
-    scores = scores + [score]
+    score = int(input("Score: "))
+    scores.append(score)
     
 average = sum(scores) / len(scores)
 print(f"Average: {average}")
