@@ -1,4 +1,4 @@
-from cs50 import get_int
+from cs50 import get_int # type: ignore
 
 x = get_int("What's x? ")
 y = get_int("What's y? ")
