@@ -31,8 +31,6 @@ JOIN bank_accounts b ON a.account_number = b.account_number
 JOIN people p ON b.person_id = p.id
 WHERE a.atm_location = 'Leggett Street' AND a.year = 2021 AND a.month = 7 AND a.day = 28 AND a.transaction_type = 'withdraw';
 
-
-
 --total number of phone calls
 SELECT COUNT(*) AS total_calls
 FROM phone_calls;
